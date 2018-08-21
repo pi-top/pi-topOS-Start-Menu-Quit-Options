@@ -1,12 +1,12 @@
-Source: pishutdown
+Source: pt-shutdown-helper
 Section: utils
 Priority: optional
 Maintainer: Simon Long <simon@raspberrypi.org>
 Build-Depends: debhelper (>= 9), autotools-dev, intltool, libglib2.0-dev, libgtk2.0-dev
 Standards-Version: 3.9.5
-Homepage: http://github.com/raspberrypi/pishutdown
+Homepage: http://github.com/raspberrypi/pt-shutdown-helper
 
-Package: pishutdown
+Package: pt-shutdown-helper
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Desktop shutdown helper for Raspberry Pi

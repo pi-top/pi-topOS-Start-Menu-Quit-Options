@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: pishutdown
-Source: http://github.com/raspberrypi/pishutdown
+Upstream-Name: pt-shutdown-helper
+Source: http://github.com/raspberrypi/pt-shutdown-helper
 
 Files: *
 Copyright: 2016 Simon Long <simon@raspberrypi.org>

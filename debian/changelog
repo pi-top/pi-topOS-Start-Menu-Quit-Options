@@ -1,40 +1,40 @@
-pishutdown (0.9) stretch; urgency=medium
+pt-shutdown-helper (0.9) stretch; urgency=medium
 
   * Resize properly when system font size changes
 
  -- Simon Long <simon@raspberrypi.org>  Thu, 11 Jan 2018 13:35:53 +0000
 
-pishutdown (0.8) jessie; urgency=medium
+pt-shutdown-helper (0.8) jessie; urgency=medium
 
   * Allow escape key to close application
 
  -- Simon Long <simon@raspberrypi.org>  Fri, 12 May 2017 16:23:42 +0100
 
-pishutdown (0.7) jessie; urgency=medium
+pt-shutdown-helper (0.7) jessie; urgency=medium
 
   * Corrected path for service system function
 
  -- Simon Long <simon@raspberrypi.org>  Thu, 13 Oct 2016 14:21:46 +0100
 
-pishutdown (0.6) jessie; urgency=medium
+pt-shutdown-helper (0.6) jessie; urgency=medium
 
   * Absolute paths used for all system functions
 
  -- Simon Long <simon@raspberrypi.org>  Fri, 07 Oct 2016 16:33:59 +0100
 
-pishutdown (0.5) jessie; urgency=medium
+pt-shutdown-helper (0.5) jessie; urgency=medium
 
   * Exit option now closes current xsession, rather than killing all sessions
 
  -- Simon Long <simon@raspberrypi.org>  Tue, 04 Oct 2016 13:41:21 +0100
 
-pishutdown (0.4) jessie; urgency=medium
+pt-shutdown-helper (0.4) jessie; urgency=medium
 
   * Window width increased
 
  -- Simon Long <simon@raspberrypi.org>  Mon, 18 Jul 2016 15:30:00 +0100
 
-pishutdown (0.3) jessie; urgency=medium
+pt-shutdown-helper (0.3) jessie; urgency=medium
 
   * pclose added
   * German translation added
@@ -42,14 +42,14 @@ pishutdown (0.3) jessie; urgency=medium
 
  -- Serge Schneider <serge@raspberrypi.org>  Fri, 27 May 2016 11:05:54 +0100
 
-pishutdown (0.2) jessie; urgency=medium
+pt-shutdown-helper (0.2) jessie; urgency=medium
 
   * Accelerators added
   * Text tweaks
 
  -- Serge Schneider <serge@raspberrypi.org>  Thu, 21 Apr 2016 17:44:39 +0100
 
-pishutdown (0.1) unstable; urgency=low
+pt-shutdown-helper (0.1) unstable; urgency=low
 
   * Initial release
 

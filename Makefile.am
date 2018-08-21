@@ -6,7 +6,7 @@ SUBDIRS = src po
 
 EXTRA_DIST = \
         autogen.sh \
-        pishutdown.pc.in
+        pt-shutdown-helper.pc.in
 
 install-data-local:
 	@$(NORMAL_INSTALL)
