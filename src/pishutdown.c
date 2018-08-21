@@ -104,7 +104,9 @@ int main (int argc, char *argv[])
     gtk_signal_connect (GTK_OBJECT (dlg), "delete_event", G_CALLBACK (delete_event), NULL);
     gtk_signal_connect (GTK_OBJECT (dlg), "key_press_event", G_CALLBACK(check_escape), NULL);
 
-    box = gtk_table_new (3, 1, TRUE);
+    // box = gtk_table_new (3, 1, TRUE);
+    box = gtk_table_new (2, 1, TRUE);
+
     gtk_table_set_row_spacings (GTK_TABLE (box), 5);
 
     gtk_container_add (GTK_CONTAINER (dlg), box);
@@ -126,15 +128,15 @@ int main (int argc, char *argv[])
     gtk_signal_connect (GTK_OBJECT (btn), "clicked", G_CALLBACK (button_handler), "reboot");
     gtk_table_attach_defaults (GTK_TABLE (box), btn, 0, 1, 1, 2);
 
-    get_string ("/usr/sbin/service lightdm status | grep \"\\bactive\\b\"", buffer);
-    if (strlen (buffer))
-        btn = gtk_button_new_with_mnemonic (_("Logout"));
-    else
-        btn = gtk_button_new_with_mnemonic (_("Exit to command line"));
-    gtk_widget_size_request (btn, &req);
-    if (req.width < width) gtk_widget_set_size_request (box, width, -1);
-    gtk_signal_connect (GTK_OBJECT (btn), "clicked", G_CALLBACK (button_handler), "exit");
-    gtk_table_attach_defaults (GTK_TABLE (box), btn, 0, 1, 2, 3);
+    // get_string ("/usr/sbin/service lightdm status | grep \"\\bactive\\b\"", buffer);
+    // if (strlen (buffer))
+    //     btn = gtk_button_new_with_mnemonic (_("Logout"));
+    // else
+    //     btn = gtk_button_new_with_mnemonic (_("Exit to command line"));
+    // gtk_widget_size_request (btn, &req);
+    // if (req.width < width) gtk_widget_set_size_request (box, width, -1);
+    // gtk_signal_connect (GTK_OBJECT (btn), "clicked", G_CALLBACK (button_handler), "exit");
+    // gtk_table_attach_defaults (GTK_TABLE (box), btn, 0, 1, 2, 3);
 
     gtk_window_set_position (GTK_WINDOW(dlg), GTK_WIN_POS_CENTER_ALWAYS);
     gtk_widget_show_all (dlg);
