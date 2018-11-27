@@ -13,6 +13,6 @@ sudo /usr/sbin/chroot /mnt <<EOF
     ./autogen.sh
     ./configure --sysconfdir=/etc
     /usr/bin/make -j4
-    /usr/bin/strip --strip-all src/lxde-pt-shutdown-helper
-    cp src/lxde-pt-shutdown-helper /tmp
+    /usr/bin/strip --strip-all lxde-pt-shutdown-helper
+    cp lxde-pt-shutdown-helper /tmp
 EOF
