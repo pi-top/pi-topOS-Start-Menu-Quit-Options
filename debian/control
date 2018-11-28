@@ -10,5 +10,5 @@ Package: pt-shutdown-helper
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Desktop shutdown helper for Raspberry Pi
- Small application offering shutdown / reboot / logout options, run from the
+ Small application offering shutdown and reboot options, run from the
  shutdown option on the main menu.
