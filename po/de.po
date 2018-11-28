@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Poedit 1.8.7\n"
 
 #: ../src/pt-shutdown-helper.c:63
-msgid "Shutdown options"
+msgid "Shutdown Options"
 msgstr "Herunterfahroptionen"
 
 #: ../src/pt-shutdown-helper.c:74

@@ -96,7 +96,7 @@ int main (int argc, char *argv[])
 
     // build the UI
     dlg = gtk_window_new (GTK_WINDOW_TOPLEVEL);
-    gtk_window_set_title (GTK_WINDOW (dlg), _("Shutdown options"));
+    gtk_window_set_title (GTK_WINDOW (dlg), _("Shutdown Options"));
 
     gtk_container_set_border_width (GTK_CONTAINER (dlg), 10);
     // gtk_window_set_icon (GTK_WINDOW (dlg), gdk_pixbuf_new_from_file ("/usr/share/raspberrypi-artwork/raspitr.png", NULL));
@@ -113,7 +113,7 @@ int main (int argc, char *argv[])
     gtk_container_add (GTK_CONTAINER (dlg), box);
 
     // use dummy button to find title width
-    btn = gtk_button_new_with_mnemonic (_("Shutdown options"));
+    btn = gtk_button_new_with_mnemonic (_("Shutdown Options"));
     gtk_widget_size_request (btn, &req);
     width = req.width * 2;
 
