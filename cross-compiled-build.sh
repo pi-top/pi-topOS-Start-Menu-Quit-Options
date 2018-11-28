@@ -8,7 +8,7 @@ sudo /usr/sbin/chroot /mnt <<EOF
     export LC_ALL=en_GB.UTF-8
     export LC_CTYPE=en_GB.UTF-8
     apt-get update
-    apt-get install -y autogen autoconf libtool autotools-dev intltool libglib2.0-dev
+    apt-get install -y autogen autoconf libtool autotools-dev intltool libglib2.0-dev libgtk2.0-dev
     cd /tmp/pt-shutdown-helper
     ./autogen.sh
     ./configure --sysconfdir=/etc
