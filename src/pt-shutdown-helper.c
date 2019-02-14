@@ -100,7 +100,7 @@ int main (int argc, char *argv[])
 
     gtk_container_set_border_width (GTK_CONTAINER (dlg), 10);
     // gtk_window_set_icon (GTK_WINDOW (dlg), gdk_pixbuf_new_from_file ("/usr/share/raspberrypi-artwork/raspitr.png", NULL));
-    gtk_window_set_icon (GTK_WINDOW (dlg), gdk_pixbuf_new_from_file ("/usr/share/icons/Papirus/64x64/apps/preferences-system-power.svg", NULL));
+    gtk_window_set_icon (GTK_WINDOW (dlg), gdk_pixbuf_new_from_file ("/usr/share/icons/Papirus/64x64/apps/system-shutdown.svg", NULL));
     gtk_window_set_resizable (GTK_WINDOW (dlg), FALSE);
     gtk_signal_connect (GTK_OBJECT (dlg), "delete_event", G_CALLBACK (delete_event), NULL);
     gtk_signal_connect (GTK_OBJECT (dlg), "key_press_event", G_CALLBACK(check_escape), NULL);
