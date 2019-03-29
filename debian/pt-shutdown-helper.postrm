@@ -7,4 +7,3 @@ if [ remove = "$1" -o abort-install = "$1" -o disappear = "$1" ]; then
 fi
 
 #DEBHELPER#
-
