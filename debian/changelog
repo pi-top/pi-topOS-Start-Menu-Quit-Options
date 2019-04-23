@@ -1,4 +1,4 @@
-pt-shutdown-helper (1.0.1) stretch; urgency=medium
+pt-shutdown-helper (1.0.1-1) stretch; urgency=medium
 
   * Fork for pi-topOS
 
