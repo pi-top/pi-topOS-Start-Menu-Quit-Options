@@ -200,5 +200,3 @@ if test x"$sysconfdir" != x'/etc'; then
     echo 'Warning: sysconfdir is not /etc. It might be not what you want.'
     echo 'Please consider passing --sysconfdir=/etc to configure.'
 fi
-
-
