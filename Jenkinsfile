@@ -7,6 +7,10 @@ node ('master') {
             stash name: 'checkout', include: '*/**'
         }
     }
+
+    stage ('Pre-commit Checks') {
+        preCommit()
+    }
 }
 stage ('Build') {
     node ('rpi-cross-compile') {
