@@ -1,4 +1,4 @@
-pt-shutdown-helper-deb (1.0.1-2) buster; urgency=medium
+pt-shutdown-helper (1.0.1-2) buster; urgency=medium
 
   * Move to Buster
 
