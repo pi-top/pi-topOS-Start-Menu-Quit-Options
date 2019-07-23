@@ -2,7 +2,7 @@
 
 set -e
 
-if [ remove = "$1" -o abort-install = "$1" -o disappear = "$1" ]; then
+if [ remove = "$1" ] || [ abort-install = "$1" ] || [ disappear = "$1" ]; then
   dpkg-divert --package pt-shutdown-helper --rename --remove /usr/bin/lxde-pt-shutdown-helper
 fi
 
