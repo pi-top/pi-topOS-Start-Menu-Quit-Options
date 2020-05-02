@@ -1,4 +1,4 @@
-@Library("devops-jenkins-shared-library@feature/addGnuComponents") _
+@Library("devops-jenkins-shared-library@master") _
 
 buildOSPackage(
   [
