@@ -2,13 +2,19 @@ Source: pt-shutdown-helper
 Section: utils
 Priority: optional
 Maintainer: pi-top <deb-maintainers@pi-top.com>
-Build-Depends: debhelper (>= 9), autotools-dev, intltool, libglib2.0-dev, libgtk2.0-dev, dh-autoreconf
-Standards-Version: 3.9.5
+Build-Depends: debhelper-compat (= 12),
+ autotools-dev,
+ intltool,
+ libglib2.0-dev,
+ libgtk2.0-dev,
+ dh-autoreconf,
+Standards-Version: 4.5.0
 Homepage: https://pi-top.com/
 
 Package: pt-shutdown-helper
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends},
+ ${misc:Depends},
 Description: Desktop shutdown helper for Raspberry Pi
  Small application offering shutdown and reboot options, run from the
  shutdown option on the main menu.

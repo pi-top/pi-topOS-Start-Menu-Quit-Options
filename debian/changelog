@@ -1,3 +1,10 @@
+pt-shutdown-helper (2.0.0) buster; urgency=medium
+
+  * Migrate to native package
+  * Upgrade package format to compat level 12
+
+ -- Mike Roberts <mike@pi-top.com>  Tue, 20 Oct 2020 14:08:51 +0100
+
 pt-shutdown-helper (1.0.2-1) buster; urgency=medium
 
   * Move to Buster
