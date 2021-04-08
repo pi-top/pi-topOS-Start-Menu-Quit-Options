@@ -1,40 +1,39 @@
-# German translations for pt-shutdown-helper package.
-# Copyright (C) 2016 THE pt-shutdown-helper'S COPYRIGHT HOLDER
+# Slovak translations for pt-shutdown-helper package.
+# Copyright (C) 2019 THE pt-shutdown-helper'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the pt-shutdown-helper package.
-# Simon Long <simon@raspberrypi.org>, 2016.
-# Benjamin Weis <benjamin.weis@gmx.com>, 2016.
+# Jose Riha <jose1711 gmail com>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pt-shutdown-helper 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-11 18:06+0000\n"
-"PO-Revision-Date: 2016-05-14 19:28+0200\n"
-"Last-Translator: Benjamin Weis <benjamin.weis@gmx.com>\n"
+"PO-Revision-Date: 2020-11-28 20:52+0100\n"
+"Last-Translator: Jose Riha <jose1711@gmail.com>\n"
 "Language-Team: \n"
-"Language: de\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../src/pt-shutdown-helper.c:63
 msgid "Shutdown options"
-msgstr "Herunterfahroptionen"
+msgstr "Voľby vypnutia"
 
 #: ../src/pt-shutdown-helper.c:74
 msgid "Shutdown"
-msgstr "Herunterfahren"
+msgstr "Vypnúť"
 
 #: ../src/pt-shutdown-helper.c:80
 msgid "Reboot"
-msgstr "Neu starten"
+msgstr "Reštartovať"
 
 #: ../src/pt-shutdown-helper.c:88
 msgid "Logout"
-msgstr "Abmelden"
+msgstr "Odhlásiť sa"
 
 #: ../src/pt-shutdown-helper.c:90
 msgid "Exit to command line"
-msgstr "Beenden und zur Befehlszeile"
+msgstr "Prejsť do príkazového riadka"

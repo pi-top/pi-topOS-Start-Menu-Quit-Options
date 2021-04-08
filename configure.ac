@@ -1,6 +1,6 @@
 AC_PREREQ(2.53)
 AC_CONFIG_MACRO_DIR([m4])
-AC_INIT(pt-shutdown-helper,0.4,http://raspberrypi.org/)
+AC_INIT(pt-shutdown-helper,0.4,https://pi-top.com/)
 AM_INIT_AUTOMAKE([-Wall foreign subdir-objects no-dist-gzip dist-xz])
 AC_CONFIG_HEADER([config.h])
 AC_CONFIG_MACRO_DIR([m4])
@@ -25,7 +25,7 @@ LT_PREREQ([2.2])
 LT_INIT
 
 # Checks for libraries.
-pkg_modules="$pkg_modules gtk+-2.0 >= 2.18.0"
+pkg_modules="$pkg_modules gtk+-3.0 >= 3.24.0"
 
 pkg_modules="$pkg_modules"
 PKG_CHECK_MODULES(PACKAGE, [$pkg_modules])
@@ -184,12 +184,13 @@ fi
 AC_CONFIG_FILES([
     Makefile
     src/Makefile
+    data/Makefile
     po/Makefile.in
 ])
 AC_OUTPUT
 
 echo
-echo pt-shutdown-helper ......................... : Version $VERSION
+echo pt-shutdown-helper .............. : Version $VERSION
 echo
 echo Prefix........................... : $prefix
 echo System config directory.......... : `eval "echo $sysconfdir"`

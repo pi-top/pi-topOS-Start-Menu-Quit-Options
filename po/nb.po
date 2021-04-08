@@ -1,40 +1,39 @@
-# German translations for pt-shutdown-helper package.
+# Norwegian Bokmål translations for pt-shutdown-helper package.
 # Copyright (C) 2016 THE pt-shutdown-helper'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the pt-shutdown-helper package.
-# Simon Long <simon@raspberrypi.org>, 2016.
-# Benjamin Weis <benjamin.weis@gmx.com>, 2016.
+# Imre Kristoffer Eilertsen <imreeil42@gmail.com>, 2019
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pt-shutdown-helper 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-11 18:06+0000\n"
-"PO-Revision-Date: 2016-05-14 19:28+0200\n"
-"Last-Translator: Benjamin Weis <benjamin.weis@gmx.com>\n"
-"Language-Team: \n"
-"Language: de\n"
+"PO-Revision-Date: 2019-08-14 18:51+0200\n"
+"Language-Team: Norwegian Bokmål\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 2.2.3\n"
+"Last-Translator: Imre Kristoffer Eilertsen <imreeil42@gmail.com>\n"
+"Language: nb\n"
 
 #: ../src/pt-shutdown-helper.c:63
 msgid "Shutdown options"
-msgstr "Herunterfahroptionen"
+msgstr "Avskruingsalternativer"
 
 #: ../src/pt-shutdown-helper.c:74
 msgid "Shutdown"
-msgstr "Herunterfahren"
+msgstr "Skru av"
 
 #: ../src/pt-shutdown-helper.c:80
 msgid "Reboot"
-msgstr "Neu starten"
+msgstr "Omstart"
 
 #: ../src/pt-shutdown-helper.c:88
 msgid "Logout"
-msgstr "Abmelden"
+msgstr "Logg av"
 
 #: ../src/pt-shutdown-helper.c:90
 msgid "Exit to command line"
-msgstr "Beenden und zur Befehlszeile"
+msgstr "Avslutt til ledeteksten"

@@ -1,3 +1,1 @@
-This is a helper application to offer shutdown options to the user.
-
-To build, run autogen.sh, then ./configure and make.
+This is a modified version of https://github.com/raspberrypi-ui/pishutdown, that removes the logout option.

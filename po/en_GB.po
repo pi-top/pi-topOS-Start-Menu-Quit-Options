@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../src/pt-shutdown-helper.c:63
-msgid "Shutdown Options"
+msgid "Shutdown options"
 msgstr "Shutdown Options"
 
 #: ../src/pt-shutdown-helper.c:74
