@@ -1,4 +1,4 @@
-pt-shutdown-helper (2.0.1) buster; urgency=medium
+pt-shutdown-helper (2.1.0) buster; urgency=medium
 
   * Restructure project to perform full package build using dpkg-buildpackage
   * Use latest best practices for package building (compat level 12, etc.)
