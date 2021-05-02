@@ -18,11 +18,16 @@ jobs:
           CI_CHANGELOG_BUMP_BRANCH: ${{ secrets.CI_CHANGELOG_BUMP_BRANCH }}
           PR_MERGED: ${{ github.event.pull_request.merged }}
         run: |
-          if [[ "${GITHUB_HEAD_REF}" == "${CI_CHANGELOG_BUMP_BRANCH}" ]] && [[ "${PR_MERGED}" == "true" ]]; then
+          conditions_met="false"
+
+          if [[ -z "${GITHUB_HEAD_REF}" ]]; then
+            # Must be workflow_dispatch
             conditions_met="true"
-          else
-            conditions_met="false"
+          elif [[ "${GITHUB_HEAD_REF}" == "${CI_CHANGELOG_BUMP_BRANCH}" ]] && [[ "${PR_MERGED}" == "true" ]]; then
+            # Changelog PR closed
+            conditions_met="true"
           fi
+
           echo "::set-output name=should_run::${conditions_met}"
 
   build-debian:
