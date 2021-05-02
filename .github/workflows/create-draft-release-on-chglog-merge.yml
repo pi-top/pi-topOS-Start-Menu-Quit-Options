@@ -4,6 +4,7 @@ name: Create Draft GitHub Release
 on:
   pull_request:
     types: [closed]
+  workflow_dispatch:
 
 jobs:
   check-should-run:
