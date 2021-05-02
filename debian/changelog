@@ -1,3 +1,69 @@
+pt-shutdown-helper (2.0.1) buster; urgency=medium
+
+  [ Mike Roberts ]
+  * Remove logout option from shutdown helper
+  * Renamed all to pt-shutdown-helper
+  * Rename lxde-pi to lxde-pt
+  * ♻️ Rename all lxde-pi references to lxde-pt
+  * 🍱 Add lxde-pt-shutdown-helper binary to bin dir
+  * 🔧 Add install file to install binary
+  * 👷 Add Jenkinsfile
+  * 💚 Fix temporary rules file
+  * 💚 Add skip strip and shlibs to rules files
+  * 💚 Build application from source in Jenkins
+  * 🎨 Remove binary build from package
+  * 🐛 Fix file path bug for strip and copy of binary
+  * 🔥 Remove Raspberry Pi icon from window
+  * 💡 Remove logout from description metadata
+  * 💬 Update control file maintainer & homepage fields
+  * 💚 Attempt to fix cross-compiled-build.sh
+  * 💚 Install autogen autoconf libtool before using autogen
+  * 💚 Add libgtk2.0-dev install before ./configure
+  * 🍱 Attempt to use preferences-system-power icon
+  * 💬 'Shutdown options' to 'Shutdown Options'
+  * Publish to Sirius repo
+  * Use system-shutdown.svg
+  * Fix maintainer script formatting
+  * Make maintainer scripts executable
+
+  [ Ben P ]
+  * Attempt fix deb issue
+  * Update changelog
+  * Fix changelog
+  * Remove source dir
+
+  [ Mike Roberts ]
+  * Add pre-commit config; run pre-commit
+  * Add pre-commit check
+  * Urgency=medium, distro=Buster
+  * Fix changelog package name
+  * Fix pre-commit dir error
+
+  [ Ben P ]
+  * Update changelog
+  * Fix shellcheck error
+
+  [ Mike Roberts ]
+  * No longer override stripping
+  * Test new Jenkinsfile
+  * Fix Jenkinsfile
+  * Compat level 11
+  * Upgrade package
+  * Allow external sources when testing shell scripts
+  * Add CI from pt-sys-oled
+  * Use latest CI workflows
+  * Executable debian/rules
+  * Use emulation for building if Arch is not 'all'
+  * Fix sh
+  * Fix escape newline
+  * Move src build files to top level
+  * Drop install file
+  * Fix Lintian warnings
+  * Standards-Version: 4.5.1
+  * Drop invalid dependabot config
+
+ -- pi-top <deb-maintainers@pi-top.com>  Sun, 02 May 2021 13:52:09 +0000
+
 pt-shutdown-helper (2.0.0) buster; urgency=medium
 
   * Migrate to native package
