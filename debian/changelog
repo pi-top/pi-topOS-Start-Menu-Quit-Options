@@ -1,3 +1,9 @@
+pt-shutdown-helper (2.1.1) buster; urgency=medium
+
+  * Remove unused backup file
+
+ -- pi-top <deb-maintainers@pi-top.com>  Sun, 02 May 2021 14:35:30 +0000
+
 pt-shutdown-helper (2.1.0) buster; urgency=medium
 
   * Restructure project to perform full package build using dpkg-buildpackage
