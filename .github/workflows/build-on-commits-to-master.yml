@@ -28,9 +28,9 @@ jobs:
         run: |
           platform="linux/amd64"
           if grep '^Architecture:' debian/control | grep -q -v 'all'; then
-            echo "Package requires emulation - starting binfmt"
+            echo "Package requires emulation - starting multiarch/qemu-user-static"
 
-            docker run --privileged --rm docker/binfmt:a7996909642ee92942dcd6cff44b9b95f08dad64
+            docker run --rm --privileged multiarch/qemu-user-static:register --reset
             platform="linux/arm/v7"
           fi
 
