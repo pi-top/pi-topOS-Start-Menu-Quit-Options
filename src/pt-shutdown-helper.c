@@ -56,7 +56,7 @@ void button_handler (GtkWidget *widget, gpointer data)
 {
     if (!strcmp (data, "shutdown")) system ("/sbin/shutdown -h now");
     if (!strcmp (data, "reboot")) system ("/sbin/reboot");
-    if (!strcmp (data, "exit")) system ("/bin/kill $_LXSESSION_PID");
+    if (!strcmp (data, "recovery")) system ("rm /recovery/autoboot.txt && /sbin/reboot");
 }
 
 gint delete_event (GtkWidget *widget, GdkEvent *event, gpointer data)
@@ -99,14 +99,12 @@ int main (int argc, char *argv[])
     gtk_window_set_title (GTK_WINDOW (dlg), _("Shutdown Options"));
 
     gtk_container_set_border_width (GTK_CONTAINER (dlg), 10);
-    // gtk_window_set_icon (GTK_WINDOW (dlg), gdk_pixbuf_new_from_file ("/usr/share/raspberrypi-artwork/raspitr.png", NULL));
     gtk_window_set_icon (GTK_WINDOW (dlg), gdk_pixbuf_new_from_file ("/usr/share/icons/Papirus/64x64/apps/system-shutdown.svg", NULL));
     gtk_window_set_resizable (GTK_WINDOW (dlg), FALSE);
     gtk_signal_connect (GTK_OBJECT (dlg), "delete_event", G_CALLBACK (delete_event), NULL);
     gtk_signal_connect (GTK_OBJECT (dlg), "key_press_event", G_CALLBACK(check_escape), NULL);
 
-    // box = gtk_table_new (3, 1, TRUE);
-    box = gtk_table_new (2, 1, TRUE);
+    box = gtk_table_new (3, 1, TRUE);
 
     gtk_table_set_row_spacings (GTK_TABLE (box), 5);
 
@@ -129,15 +127,11 @@ int main (int argc, char *argv[])
     gtk_signal_connect (GTK_OBJECT (btn), "clicked", G_CALLBACK (button_handler), "reboot");
     gtk_table_attach_defaults (GTK_TABLE (box), btn, 0, 1, 1, 2);
 
-    // get_string ("/usr/sbin/service lightdm status | grep \"\\bactive\\b\"", buffer);
-    // if (strlen (buffer))
-    //     btn = gtk_button_new_with_mnemonic (_("Logout"));
-    // else
-    //     btn = gtk_button_new_with_mnemonic (_("Exit to command line"));
-    // gtk_widget_size_request (btn, &req);
-    // if (req.width < width) gtk_widget_set_size_request (box, width, -1);
-    // gtk_signal_connect (GTK_OBJECT (btn), "clicked", G_CALLBACK (button_handler), "exit");
-    // gtk_table_attach_defaults (GTK_TABLE (box), btn, 0, 1, 2, 3);
+    btn = gtk_button_new_with_mnemonic (_("Reboot into Recovery Mode"));
+    gtk_widget_size_request (btn, &req);
+    if (req.width < width) gtk_widget_set_size_request (box, width, -1);
+    gtk_signal_connect (GTK_OBJECT (btn), "clicked", G_CALLBACK (button_handler), "recovery");
+    gtk_table_attach_defaults (GTK_TABLE (box), btn, 0, 1, 2, 3);
 
     gtk_window_set_position (GTK_WINDOW(dlg), GTK_WIN_POS_CENTER_ALWAYS);
     gtk_widget_show_all (dlg);
