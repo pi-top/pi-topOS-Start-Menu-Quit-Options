@@ -1,8 +1,6 @@
 pt-shutdown-helper (2.1.2) buster; urgency=medium
 
-  [ Mike Roberts ]
-  * Add "Reboot to recovery" button (#8)
-  * Use 'multiarch/qemu-user-static:register'
+  * Add "Reboot to recovery" button
 
  -- pi-top <deb-maintainers@pi-top.com>  Mon, 21 Jun 2021 17:44:03 +0000
 
