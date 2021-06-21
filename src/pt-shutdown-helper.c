@@ -127,7 +127,7 @@ int main (int argc, char *argv[])
     gtk_signal_connect (GTK_OBJECT (btn), "clicked", G_CALLBACK (button_handler), "reboot");
     gtk_table_attach_defaults (GTK_TABLE (box), btn, 0, 1, 1, 2);
 
-    btn = gtk_button_new_with_mnemonic (_("Reboot into Recovery Mode"));
+    btn = gtk_button_new_with_mnemonic (_("Reboot into pi-topOS Recovery"));
     gtk_widget_size_request (btn, &req);
     if (req.width < width) gtk_widget_set_size_request (box, width, -1);
     gtk_signal_connect (GTK_OBJECT (btn), "clicked", G_CALLBACK (button_handler), "recovery");
