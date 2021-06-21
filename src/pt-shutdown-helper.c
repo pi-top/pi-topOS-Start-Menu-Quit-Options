@@ -56,7 +56,11 @@ void button_handler (GtkWidget *widget, gpointer data)
 {
     if (!strcmp (data, "shutdown")) system ("/sbin/shutdown -h now");
     if (!strcmp (data, "reboot")) system ("/sbin/reboot");
-    if (!strcmp (data, "recovery")) system ("/usr/bin/rm /recovery/autoboot.txt && /sbin/reboot");
+    if (!strcmp (data, "recovery"))
+    {
+        system ("/usr/bin/rm /recovery/autoboot.txt");
+        system ("/sbin/reboot");
+    }
 }
 
 gint delete_event (GtkWidget *widget, GdkEvent *event, gpointer data)
