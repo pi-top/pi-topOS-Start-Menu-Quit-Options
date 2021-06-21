@@ -1,7 +1,0 @@
-#!/bin/sh
-
-set -e
-
-dpkg-divert --package pt-shutdown-helper --divert /usr/bin/lxde-pt-shutdown-helper.old --rename /usr/bin/lxde-pt-shutdown-helper
-
-#DEBHELPER#
