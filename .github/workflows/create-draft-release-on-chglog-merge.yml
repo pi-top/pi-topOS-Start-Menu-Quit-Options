@@ -45,9 +45,9 @@ jobs:
         run: |
           platform="linux/amd64"
           if grep '^Architecture:' debian/control | grep -q -v 'all'; then
-            echo "Package requires emulation - starting multiarch/qemu-user-static"
+            echo "Package requires emulation - starting tonistiigi/binfmt"
 
-            docker run --rm --privileged multiarch/qemu-user-static:register --reset
+            docker run --rm --privileged tonistiigi/binfmt --install all
             platform="linux/arm/v7"
           fi
           mkdir -p /tmp/artifacts/{src,bin}
