@@ -1,12 +1,12 @@
-# German translations for pt-shutdown-helper package.
-# Copyright (C) 2016 THE pt-shutdown-helper'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the pt-shutdown-helper package.
+# German translations for pt-os-quit-options package.
+# Copyright (C) 2016 THE pt-os-quit-options'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the pt-os-quit-options package.
 # Simon Long <simon@raspberrypi.org>, 2016.
 # Benjamin Weis <benjamin.weis@gmx.com>, 2016.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: pt-shutdown-helper 0.1\n"
+"Project-Id-Version: pt-os-quit-options 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-11 18:06+0000\n"
 "PO-Revision-Date: 2016-05-14 19:28+0200\n"
@@ -19,22 +19,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.8.7\n"
 
-#: ../src/pt-shutdown-helper.c:63
+#: ../src/pt-os-quit-options.c:63
 msgid "Shutdown Options"
 msgstr "Herunterfahroptionen"
 
-#: ../src/pt-shutdown-helper.c:74
+#: ../src/pt-os-quit-options.c:74
 msgid "Shutdown"
 msgstr "Herunterfahren"
 
-#: ../src/pt-shutdown-helper.c:80
+#: ../src/pt-os-quit-options.c:80
 msgid "Reboot"
 msgstr "Neu starten"
 
-#: ../src/pt-shutdown-helper.c:88
+#: ../src/pt-os-quit-options.c:88
 msgid "Logout"
 msgstr "Abmelden"
 
-#: ../src/pt-shutdown-helper.c:90
+#: ../src/pt-os-quit-options.c:90
 msgid "Exit to command line"
 msgstr "Beenden und zur Befehlszeile"
