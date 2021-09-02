@@ -1,4 +1,4 @@
-pt-os-quit-options (3.0.1) bullseye; urgency=medium
+pt-os-quit-options (3.0.1-1) bullseye; urgency=medium
 
   * Updated master workflow files
   * Remove old workflows
