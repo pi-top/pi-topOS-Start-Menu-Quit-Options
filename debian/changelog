@@ -1,3 +1,12 @@
+pt-os-quit-options (3.0.1-4) bullseye; urgency=medium
+
+  * Updated master workflow files
+  * Updated master workflow files
+  * Updated master workflow files
+  * Package for bookworm (#21)
+
+ -- pi-top <deb-maintainers@pi-top.com>  Fri, 12 Apr 2024 19:22:10 +0000
+
 pt-os-quit-options (3.0.1-3) bullseye; urgency=medium
 
   * Add 64 bit builds (#19)
