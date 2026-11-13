@@ -1,4 +1,4 @@
-pt-os-quit-options (3.0.2-1) bookworm; urgency=medium
+pt-os-quit-options (3.1.0-1) bookworm; urgency=medium
 
   * Debian workflows: drop bullseye, move off the dead runner
   * Remove debian/bullseye-overrides
